@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://password-reset-backend-n4xb.onrender.com/',
+        target: 'http://localhost:5000',
         changeOrigin: true,
         secure: false,
       },
