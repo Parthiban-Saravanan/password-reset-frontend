@@ -12,7 +12,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('/api/auth/login', { email, password });
+      const res = await axios.post('https://password-reset-backend-n4xb.onrender.com/api/auth/login', { email, password });
       setFeedback(res.data.message);
       // If login is successful, navigate to the homepage or dashboard
       if (res.status === 200) {
